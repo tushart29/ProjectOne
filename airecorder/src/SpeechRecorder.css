@@ -1,0 +1,86 @@
+.speech-recorder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e2a44 0%, #2c3e50 100%); /* Dark, faith-inspired gradient */
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .speech-recorder-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e0e6ed; /* Light gray for contrast */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .speech-recorder-input {
+    padding: 10px;
+    font-size: 1rem;
+    color: #e0e6ed;
+    background-color: #34495e; /* Dark gray for input */
+    border: 1px solid #4a6078;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .speech-recorder-input:hover {
+    background-color: #3e5a74;
+  }
+  
+  .speech-recorder-input:disabled {
+    background-color: #2c3e50;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .speech-recorder-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1a73e8; /* Vibrant blue for trust */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .speech-recorder-button:hover {
+    background-color: #1557b0;
+  }
+  
+  .speech-recorder-button:disabled {
+    background-color: #4a6078;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .speech-recorder-button.processing {
+    background-color: #c0392b; /* Red to indicate processing */
+    animation: pulse 1.5s infinite;
+  }
+  
+  .speech-recorder-text {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #e0e6ed;
+    background-color: #2c3e50; /* Dark card background */
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
